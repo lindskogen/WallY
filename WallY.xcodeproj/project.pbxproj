@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0427C0E2185CA90E00058D66 /* WYOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0427C0E1185CA90E00058D66 /* WYOptions.m */; };
 		045BC906185A8DF000F4330D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045BC905185A8DF000F4330D /* Foundation.framework */; };
 		045BC909185A8DF000F4330D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BC908185A8DF000F4330D /* main.m */; };
 		045BC90D185A8DF000F4330D /* WallY.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 045BC90C185A8DF000F4330D /* WallY.1 */; };
+		045BC915185A8E1400F4330D /* WYDesktopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BC914185A8E1400F4330D /* WYDesktopController.m */; };
+		045BC917185A9BAF00F4330D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045BC916185A9BAF00F4330D /* AppKit.framework */; };
+		045BC91A185AA7CF00F4330D /* WYLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BC919185AA7CF00F4330D /* WYLogging.m */; };
+		1CC872A1A9164F62B8126632 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD05D9BC2A24351850C39BD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +31,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0427C0E0185CA90E00058D66 /* WYOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYOptions.h; sourceTree = "<group>"; };
+		0427C0E1185CA90E00058D66 /* WYOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYOptions.m; sourceTree = "<group>"; };
 		045BC902185A8DF000F4330D /* WallY */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WallY; sourceTree = BUILT_PRODUCTS_DIR; };
 		045BC905185A8DF000F4330D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		045BC908185A8DF000F4330D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045BC90B185A8DF000F4330D /* WallY-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WallY-Prefix.pch"; sourceTree = "<group>"; };
 		045BC90C185A8DF000F4330D /* WallY.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WallY.1; sourceTree = "<group>"; };
+		045BC913185A8E1400F4330D /* WYDesktopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDesktopController.h; sourceTree = "<group>"; };
+		045BC914185A8E1400F4330D /* WYDesktopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDesktopController.m; sourceTree = "<group>"; };
+		045BC916185A9BAF00F4330D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		045BC918185AA7CF00F4330D /* WYLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLogging.h; sourceTree = "<group>"; };
+		045BC919185AA7CF00F4330D /* WYLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLogging.m; sourceTree = "<group>"; };
+		2FD05D9BC2A24351850C39BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15F16193AB2496FA06BC6DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045BC917185A9BAF00F4330D /* AppKit.framework in Frameworks */,
 				045BC906185A8DF000F4330D /* Foundation.framework in Frameworks */,
+				1CC872A1A9164F62B8126632 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,7 @@
 				045BC907185A8DF000F4330D /* WallY */,
 				045BC904185A8DF000F4330D /* Frameworks */,
 				045BC903185A8DF000F4330D /* Products */,
+				E15F16193AB2496FA06BC6DE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +82,9 @@
 		045BC904185A8DF000F4330D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				045BC916185A9BAF00F4330D /* AppKit.framework */,
 				045BC905185A8DF000F4330D /* Foundation.framework */,
+				2FD05D9BC2A24351850C39BD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +95,12 @@
 				045BC908185A8DF000F4330D /* main.m */,
 				045BC90C185A8DF000F4330D /* WallY.1 */,
 				045BC90A185A8DF000F4330D /* Supporting Files */,
+				045BC913185A8E1400F4330D /* WYDesktopController.h */,
+				045BC914185A8E1400F4330D /* WYDesktopController.m */,
+				045BC918185AA7CF00F4330D /* WYLogging.h */,
+				045BC919185AA7CF00F4330D /* WYLogging.m */,
+				0427C0E0185CA90E00058D66 /* WYOptions.h */,
+				0427C0E1185CA90E00058D66 /* WYOptions.m */,
 			);
 			path = WallY;
 			sourceTree = "<group>";
@@ -95,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045BC910185A8DF000F4330D /* Build configuration list for PBXNativeTarget "WallY" */;
 			buildPhases = (
+				031DC4A278FB47C8982C0D75 /* Check Pods Manifest.lock */,
 				045BC8FE185A8DF000F4330D /* Sources */,
 				045BC8FF185A8DF000F4330D /* Frameworks */,
 				045BC900185A8DF000F4330D /* CopyFiles */,
+				BDA82ACDF5784E2BBDEE6689 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -114,6 +141,7 @@
 		045BC8FA185A8DF000F4330D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WY;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Johan Lindskogen";
 			};
@@ -134,12 +162,48 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		031DC4A278FB47C8982C0D75 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDA82ACDF5784E2BBDEE6689 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		045BC8FE185A8DF000F4330D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045BC915185A8E1400F4330D /* WYDesktopController.m in Sources */,
 				045BC909185A8DF000F4330D /* main.m in Sources */,
+				0427C0E2185CA90E00058D66 /* WYOptions.m in Sources */,
+				045BC91A185AA7CF00F4330D /* WYLogging.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +280,7 @@
 		};
 		045BC911185A8DF000F4330D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15F16193AB2496FA06BC6DE /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WallY/WallY-Prefix.pch";
@@ -225,6 +290,7 @@
 		};
 		045BC912185A8DF000F4330D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15F16193AB2496FA06BC6DE /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WallY/WallY-Prefix.pch";
@@ -251,6 +317,7 @@
 				045BC912185A8DF000F4330D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
